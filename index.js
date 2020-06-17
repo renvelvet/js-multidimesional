@@ -6,9 +6,10 @@ multiArray.forEach((item) => {
   item.forEach((innerArray) => {
     let column = document.createTextNode(innerArray);
     row.appendChild(column);
+    console.log(row);
+    // kalau home-profile digabung
     let br = document.createElement("br");
     row.appendChild(br);
-    console.log(row);
   });
   let column = document.createElement("hr");
   sidebar.appendChild(row);
